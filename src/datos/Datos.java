@@ -15,7 +15,9 @@ public class Datos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // utilizar println para que muestre el text y haga un salto de linea
+        // por eso utilizamos para leer el metodo nextLine() y leemos la siguiente linea
+        
         
         String nombre,apellido,direccion;
         int edad;
@@ -23,19 +25,19 @@ public class Datos {
         Scanner leer = new Scanner(System.in);
         
         // Nombre
-        System.out.print("Ingrese su Nombre:");
-        nombre = leer.next();
+        System.out.println("Ingrese su Nombre:");
+        nombre = leer.nextLine();
         
         // Apellido
-        System.out.print("Ingrese su Apellido: ");
-        apellido = leer.next();
+        System.out.println("Ingrese su Apellido: ");
+        apellido = leer.nextLine();
         
-        // Direccion (ver) (nextLine)
-        System.out.print("Ingrese su direccion: ");
-        direccion = leer.next();
+        // Direccion 
+        System.out.println("Ingrese su direccion: ");
+        direccion = leer.nextLine();
         
         // Edad
-        System.out.print("Ingrese su edad: ");
+        System.out.println("Ingrese su edad: ");
         edad = leer.nextInt();
         
         // Muestro en pantalla las var ingresadas 
